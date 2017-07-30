@@ -207,7 +207,7 @@ T add (T a, T b)
 	return a + b; 
 }
 
-// template function with argument.  compiler will creates separate functions for each T, N combo called.
+// template function with argument (int N).  compiler will creates separate functions for each T, N combo called.
 //   since functions are created at compile time N must be an expression, not a variable.
 template <class T, int N>
 T fixed_multiply(T val) { return val * N; }
